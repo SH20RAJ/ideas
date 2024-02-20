@@ -8,6 +8,8 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/SH20RAJ/ideas)](https://github.com/SH20RAJ/ideas/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/SH20RAJ/ideas)](https://github.com/SH20RAJ/ideas/issues)
 ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=SH20RAJ.ideas)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-brightgreen)](https://SH20RAJ.github.io/ideas)
+
 
 Welcome to the Ideas Repository! This repository is a collaborative space for sharing creative and innovative ideas across various domains. Whether you're looking for inspiration for your next project or you want to contribute your own ideas, you're in the right place.
 
@@ -47,3 +49,6 @@ This repository is licensed under the [MIT License](LICENSE).
 Have questions, suggestions, or feedback? Feel free to [open an issue](https://github.com/SH20RAJ/ideas/issues) or join the discussion in the [discussions](https://github.com/SH20RAJ/ideas/discussions) section.
 
 Let's build and innovate together!
+<p align="center">
+<a style="display:block;text-align:center;" href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FSH20RAJ%2Fideas%2F"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FSH20RAJ%2Fideas%2F&countColor=%23263759" /></a>
+</p>
