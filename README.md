@@ -36,7 +36,7 @@ To contribute, please follow these guidelines:
 
 ## 📋 Ideas Lists
 
-- [100+ JavaScript Library Ideas](javascript-libraries.md)
+- [100+ JavaScript Library Ideas](telegram/100-innovative-ideas-for-telegram-bots.md)
 - [100+ Telegram Bot Ideas](telegram-bots.md)
 - [More Coming Soon...]
 
