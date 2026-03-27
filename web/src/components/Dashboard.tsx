@@ -35,6 +35,7 @@ export default function Dashboard({ initialIdeas }: { initialIdeas: IdeaMetadata
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-6 mb-2">
             <a href="https://github.com/sh20raj" target="_blank" rel="noopener noreferrer" className="text-[11px] font-bold uppercase tracking-widest text-zinc-400 hover:text-black transition-colors">Github</a>
+            <a href="https://github.com/sh20raj/ideas" target="_blank" rel="noopener noreferrer" className="text-[11px] font-bold uppercase tracking-widest text-zinc-400 hover:text-black transition-colors">Source</a>
             <a href="https://sh20raj.github.io/" target="_blank" rel="noopener noreferrer" className="text-[11px] font-bold uppercase tracking-widest text-zinc-400 hover:text-black transition-colors">Portfolio</a>
           </div>
           <h1 className="text-[64px] font-bold leading-[1.1] tracking-tight text-black">

@@ -60,6 +60,7 @@ export default async function IdeaPage({ params }: { params: Promise<{ category:
       <footer className="mt-40 pt-12 border-t border-zinc-100 flex flex-col md:flex-row justify-between items-center text-[11px] font-bold uppercase tracking-widest text-zinc-400 gap-4">
         <div className="flex gap-8">
            <a href="https://github.com/sh20raj" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Github</a>
+           <a href="https://github.com/sh20raj/ideas" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Source</a>
            <a href="https://sh20raj.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Portfolio</a>
            <span>Concept &copy; 2026 @sh20raj</span>
         </div>
