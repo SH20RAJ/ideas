@@ -35,10 +35,10 @@ export default function Dashboard({ initialIdeas }: { initialIdeas: IdeaMetadata
         {/* Header Section */}
         <div className="flex flex-col gap-4">
           <h1 className="text-[64px] font-bold leading-[1.1] tracking-tight text-black">
-             Structure for <br/> <span className="opacity-40 italic font-medium">multi-tenancy</span>
+             The Idea <br/> <span className="opacity-40 italic font-medium">Archive</span>
           </h1>
           <p className="text-xl text-zinc-500 max-w-2xl leading-relaxed">
-            A hyper-minimalist archive of core documentation, startup pitches, and technical projects by @sh20raj.
+            A hyper-minimalist vault of core documentation, startup pitches, and technical projects by @sh20raj.
           </p>
         </div>
 
