@@ -14,8 +14,10 @@ A structured repository to manage startup ideas, project ideas, and JS library i
 
 ## How to add a new idea
 
-1. Copy the relevant template from `/templates` to the corresponding category folder.
-2. Fill in the Frontmatter (YAML block at the top).
+1. Create a new folder in the corresponding category (e.g., `startup/my-idea/`).
+2. Copy the relevant template from `/templates` to the new folder as `README.md`.
+3. Add any assets (logos, pitch decks) directly to that folder.
+4. Fill in the Frontmatter (YAML block at the top).
 3. Use `status` to track progress: `backlog`, `in-progress`, `executed`, or `archived`.
 4. Add relevant `link` if the project is built.
 

@@ -11,13 +11,23 @@ Welcome, Agent. This repository is a structured system for managing the startup 
 - `/projects`: General software project ideas.
 - `/libs`: JavaScript/TypeScript library ideas.
 - `/templates`: Markdown templates with standardized Frontmatter.
+- `/assets`: Organized by category and idea (e.g., `assets/startup/cutuu/`).
+
+## 🖼️ Asset Management Rules
+When adding assets (logos, pitch decks, screenshots):
+1. **Location**: Place them in the idea's own folder (e.g., `startup/cutuu/`).
+2. **Naming**: Use lowercase with hyphens (e.g., `logo-final.png`).
+3. **Common Assets**: Place generic images in `assets/common/`.
+4. **Linking**: Use relative paths in Markdown.
 
 ## 📝 Rules for Adding New Ideas
 When the user provides a new idea or PSD, follow these steps:
 
 1. **Categorize:** Choose the correct folder (`startup/`, `projects/`, or `libs/`).
-2. **Template:** Use the corresponding template from `/templates/`.
-3. **Frontmatter:** Ensure the YAML metadata is fully populated:
+2. **Folder Creation**: Create a new folder for the idea (e.g., `startup/cutuu/`).
+3. **README**: Create a `README.md` inside that folder using the corresponding template from `/templates/`.
+4. **Assets**: Place all related assets (logos, pitch decks) directly in the same folder.
+5. **Frontmatter:** Ensure the YAML metadata is fully populated:
    - `status`: `backlog`, `in-progress`, `executed`, or `archived`.
    - `created_at`: Use current date.
    - `link`: Direct URL if available.

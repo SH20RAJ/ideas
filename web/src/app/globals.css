@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617;
+  --foreground: #f8fafc;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+/* Base prose styles for markdown content in dark mode */
+.markdown-content {
+  line-height: 1.75;
+  color: #cbd5e1;
+}
+
+.markdown-content h1, 
+.markdown-content h2, 
+.markdown-content h3 {
+  color: #f8fafc;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-content h1 { font-size: 2.25rem; }
+.markdown-content h2 { font-size: 1.875rem; border-bottom: 1px solid #1e293b; padding-bottom: 0.5rem; }
+.markdown-content h3 { font-size: 1.5rem; }
+
+.markdown-content p { margin-bottom: 1.25rem; }
+
+.markdown-content ul, .markdown-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.markdown-content li { margin-bottom: 0.5rem; }
+
+.markdown-content a {
+  color: #60a5fa;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid #3b82f6;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #94a3b8;
+  margin: 1.5rem 0;
+}
+
+.markdown-content code {
+  background: #1e293b;
+  padding: 0.2rem 0.4rem;
+  rounded: 4px;
+  font-size: 0.875em;
+}
+
+.markdown-content pre {
+  background: #0f172a;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  border: 1px solid #1e293b;
+  margin: 1.5rem 0;
+}
