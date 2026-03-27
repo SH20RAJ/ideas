@@ -10,6 +10,7 @@ A collection of high-level business concepts and startup ideas.
 | [KishanAI](./kishan-ai.md) | AI-powered agricultural assistant | In-progress | 5 |
 | [Daksha](./daksha.md) | AI-powered journaling MindOS | Backlog | 5 |
 | [Unistory](./unistory.md) | Universal storytelling platform | Backlog | 5 |
+| [Unstory.app](./unstory-app.md) | Campus social infrastructure | Backlog | 5 |
 
 ## Adding new ideas
 
