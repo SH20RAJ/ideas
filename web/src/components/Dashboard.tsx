@@ -26,89 +26,89 @@ export default function Dashboard({ initialIdeas }: { initialIdeas: IdeaMetadata
     return results;
   }, [query, category, initialIdeas, fuse]);
 
-  const categories = ['all', 'startup', 'projects', 'libs'];
+  const categories = ['all', 'docs', 'startup', 'projects', 'libs'];
 
   return (
-    <>
-      <div className="flex flex-col md:flex-row gap-4 mb-12">
-        <div className="relative flex-1">
-          <input
-            type="text"
-            placeholder="Search ideas (e.g. 'ai', 'farmer', 'journal')..."
-            className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 text-sm">
-             {filteredIdeas.length} results
+    <div className="max-w-6xl mx-auto px-6 py-20">
+      <div className="flex flex-col gap-12">
+        
+        {/* Header Section */}
+        <div className="flex flex-col gap-4">
+          <h1 className="text-[64px] font-bold leading-[1.1] tracking-tight text-black">
+             Structure for <br/> <span className="opacity-40 italic font-medium">multi-tenancy</span>
+          </h1>
+          <p className="text-xl text-zinc-500 max-w-2xl leading-relaxed">
+            A hyper-minimalist archive of core documentation, startup pitches, and technical projects by @sh20raj.
+          </p>
+        </div>
+
+        {/* Action Bar */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-zinc-100 pb-12">
+          <div className="flex gap-2 bg-zinc-50 p-1 rounded-lg">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setCategory(cat)}
+                className={`px-4 py-2 rounded-md text-sm font-semibold transition-all ${
+                  category === cat 
+                    ? 'bg-white text-black shadow-sm' 
+                    : 'text-zinc-400 hover:text-zinc-600'
+                }`}
+              >
+                {cat.charAt(0).toUpperCase() + cat.slice(1)}
+              </button>
+            ))}
+          </div>
+
+          <div className="relative w-full md:w-80">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="w-full bg-white border border-zinc-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-black transition-colors"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
           </div>
         </div>
-        
-        <div className="flex gap-2 p-1 bg-slate-900 border border-slate-800 rounded-xl">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setCategory(cat)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium capitalize transition-all ${
-                category === cat 
-                  ? 'bg-blue-600 text-white shadow-lg' 
-                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-      </div>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredIdeas.map((idea) => (
-          <Link
-            key={idea.slug}
-            href={`/idea/${idea.category}/${idea.slug}`}
-            className="group block p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] flex flex-col h-full"
-          >
-            <div className="flex justify-between items-start mb-4">
-              <span className="text-xs font-bold uppercase tracking-widest text-blue-400 px-2 py-1 bg-blue-400/10 rounded">
-                {idea.category}
-              </span>
-              <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-sm ${
-                idea.status === 'in-progress' ? 'bg-amber-400/10 text-amber-400' :
-                idea.status === 'executed' ? 'bg-emerald-400/10 text-emerald-400' : 'bg-slate-700 text-slate-400'
-              }`}>
-                {idea.status}
-              </span>
-            </div>
-            
-            <h2 className="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">
-              {idea.title}
-            </h2>
-            
-            <p className="text-slate-400 text-sm line-clamp-3 mb-6 flex-grow">
-              {idea.description}
-            </p>
-            
-            <div className="mt-auto pt-4 border-t border-slate-800 flex items-center justify-between">
-              <div className="flex flex-wrap gap-1">
+        {/* Results Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+          {filteredIdeas.map((idea) => (
+            <Link
+              key={idea.slug}
+              href={`/idea/${idea.category}/${idea.slug}`}
+              className="group flex flex-col gap-4 no-underline"
+            >
+              <div className="flex items-center justify-between text-[11px] font-bold uppercase tracking-widest text-zinc-400">
+                 <span>{idea.category}</span>
+                 {idea.status && idea.status !== 'stable' && <span>{idea.status}</span>}
+              </div>
+              
+              <h3 className="text-2xl font-bold group-hover:underline underline-offset-4 decoration-1">
+                {idea.title}
+              </h3>
+              
+              <p className="text-zinc-500 text-sm leading-relaxed line-clamp-3">
+                {idea.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2 mt-2">
                 {idea.tags.slice(0, 3).map(tag => (
-                  <span key={tag} className="text-[9px] text-slate-500 bg-slate-950 px-2 py-0.5 rounded-full">
-                    #{tag}
+                  <span key={tag} className="text-[10px] font-medium text-zinc-400 border border-zinc-100 px-2 py-0.5 rounded">
+                    {tag}
                   </span>
                 ))}
               </div>
-              <span className="text-slate-600 font-mono text-[10px]">
-                v1.0
-              </span>
-            </div>
-          </Link>
-        ))}
-      </section>
-
-      {filteredIdeas.length === 0 && (
-        <div className="text-center py-20 bg-slate-900/50 border border-dashed border-slate-800 rounded-3xl">
-          <p className="text-slate-500">No ideas found matching your search criteria.</p>
+            </Link>
+          ))}
         </div>
-      )}
-    </>
+
+        {filteredIdeas.length === 0 && (
+          <div className="py-40 text-center">
+            <p className="text-zinc-400 text-sm italic">Nothing found. Try a different term.</p>
+          </div>
+        )}
+      </div>
+    </div>
   );
 }
