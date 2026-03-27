@@ -58,7 +58,11 @@ export default async function IdeaPage({ params }: { params: Promise<{ category:
       </article>
 
       <footer className="mt-40 pt-12 border-t border-zinc-100 flex flex-col md:flex-row justify-between items-center text-[11px] font-bold uppercase tracking-widest text-zinc-400 gap-4">
-        <div>Proprietary Concept &copy; 2026 @sh20raj</div>
+        <div className="flex gap-8">
+           <a href="https://github.com/sh20raj" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Github</a>
+           <a href="https://sh20raj.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">Portfolio</a>
+           <span>Concept &copy; 2026 @sh20raj</span>
+        </div>
         <div className="flex gap-8">
            <span>Priority {idea.metadata.priority}/5</span>
            <span>v1.0.0</span>
