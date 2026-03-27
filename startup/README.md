@@ -12,6 +12,7 @@ A collection of high-level business concepts and startup ideas.
 | [Unistory](./unistory/README.md) | Universal storytelling platform | Backlog | 5 |
 | [Unstory.app](./unstory-app/README.md) | Campus social infrastructure | Backlog | 5 |
 | [Cutuu](./cutuu/README.md) | Memory-native AI companion | Backlog | 5 |
+| [ContentForge AI](./contentforge-ai/README.md) | 1 Idea → 10+ Viral Content Pieces in Seconds | Backlog | 5 |
 
 ## Adding new ideas
 

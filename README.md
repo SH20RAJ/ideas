@@ -25,7 +25,7 @@ A structured repository to manage startup ideas, project ideas, and JS library i
 
 | Type | Total | Executed |
 | :--- | :--- | :--- |
-| Startup | 6 | 0 |
+| Startup | 7 | 0 |
 | Project | 0 | 0 |
 | Lib | 0 | 0 |
 
