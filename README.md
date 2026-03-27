@@ -2,7 +2,8 @@
 
 A structured repository to manage startup ideas, project ideas, and JS library ideas.
 
-**Owner Profile:** [What I Know](./what-i-know.md)
+**Owner Profile:** [What I Know](./what-i-know.md)  
+**Agent Guide:** [AI Management](./AGENTS.md)
 
 ## Organization
 
