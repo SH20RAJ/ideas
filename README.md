@@ -2,6 +2,8 @@
 
 A structured repository to manage startup ideas, project ideas, and JS library ideas.
 
+**Owner Profile:** [What I Know](./what-i-know.md)
+
 ## Organization
 
 - `/startup`: Business and startup concepts.
