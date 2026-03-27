@@ -7,6 +7,7 @@ A collection of high-level business concepts and startup ideas.
 | Name | Description | Status | Priority |
 | :--- | :--- | :--- | :--- |
 | [Hours](./hours.md) | Time → identity → outcomes system | In-progress | 5 |
+| [KishanAI](./kishan-ai.md) | AI-powered agricultural assistant | In-progress | 5 |
 
 ## Adding new ideas
 
