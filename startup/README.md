@@ -13,6 +13,7 @@ A collection of high-level business concepts and startup ideas.
 | [Unstory.app](./unstory-app/README.md) | Campus social infrastructure | Backlog | 5 |
 | [Cutuu](./cutuu/README.md) | Memory-native AI companion | Backlog | 5 |
 | [ContentForge AI](./contentforge-ai/README.md) | 1 Idea → 10+ Viral Content Pieces in Seconds | Backlog | 5 |
+| [ApplyHuman](./apply-human/README.md) | AI job application copilot that sounds human | Backlog | 5 |
 
 ## Adding new ideas
 
